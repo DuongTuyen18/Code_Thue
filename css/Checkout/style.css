@@ -38,19 +38,25 @@
     outline: 3px solid #3D5A98;
     float: right;
     margin-top: 20px;
+    margin-right: 10px;
 }
 .Payment-method{
     border-bottom: 1px solid #3D5A98;
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 15px;
-    padding-left: 10px;
     padding-right: 10px;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-bottom: 15px;
 }
 .Payment-method-bottom{
-    font-size: 32px;
+    font-size: 30px;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    padding-left: 60px;
 }
 .Payment{
     border: 1px solid #fff;
@@ -66,4 +72,9 @@
     border-radius: 7px;
     width: 160px;
     margin-bottom: 150px;
+    height: 65px;
+}
+
+.form-control{
+    background-color: #FEEFEE;
 }
