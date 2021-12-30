@@ -2,9 +2,9 @@
     font-family: textgyreadventor;
     src: url(../../fonts/tex-gyre-adventor/texgyreadventor-regular.otf);
 }
-*{
+/* *{
     font-family: textgyreadventor !important;
-}
+} */
 .font-style{
     margin: auto;
     font-style: normal;
