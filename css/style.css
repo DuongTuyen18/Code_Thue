@@ -76,11 +76,19 @@ body {
     flex-direction: column;
     position: relative;
     background-image: url(../images/hero.png);
-    background-size: cover;
+    background-size: 100% 660px;
     background-position: top right;
     background-repeat: no-repeat;
     height: 660px;
     /* width: 100%; */
+}
+
+.cardintro{
+    margin-bottom: 60px
+}
+
+.grapcard{
+    height:454px;
 }
 
 .sub_page .hero_area {
@@ -381,7 +389,8 @@ a:focus {
 
 .introduction{
     background: #feefee;
-    height: 360px;
+    /* height: 360px; */
+    padding-bottom: 30px;
 
 }
 
@@ -451,19 +460,19 @@ a:focus {
     text-align: center;
     color: #ffffff;
     background-image: url(../images/image\ 50.png);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    height: 541px;
+    /* height: 541px; */
 }
 
 .hover_hiding{
     color: transparent;
 }
 
-.why_section img {
-    height: 100%;
-}
+/* .why_section img {
+    height: 20%;
+} */
 
 .why_section h2 {
     font-weight: bold;
@@ -519,7 +528,7 @@ a:focus {
 }
 
 .offer {
-    height: 700px;
+    /* height: 700px; */
     position: relative;
     width: 100%;
     margin-top: 27px;
@@ -572,7 +581,6 @@ a:focus {
 
 .readmore {
     width: 100%;
-    padding-top: 15%;
     text-align: center;
     font-style: normal;
     font-weight: bold;
@@ -603,8 +611,9 @@ a:focus {
 
 .slider-side-item {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     background-color: #FEEFEE;
+    padding-bottom: 140px;
 }
 
 .slider-menu {

@@ -10,7 +10,32 @@
     display: none;
 }
 
-@media (max-width: 1120px) {}
+@media (max-width: 1120px) {
+    .why_section img{
+        height: 180px !important;
+    }
+
+    .why_section .hover_hiding h3 {
+        font-size: 24px !important;
+    }
+
+    .why_section .hover_hiding h2 {
+        font-size:30px !important
+    }
+
+    .why_section .hover_hiding p{
+        font-size:14px !important
+    }
+
+    .side-bar-icon {
+        width: 1000px;
+        height: 100px;
+    }
+
+    .side-bar-icon img{
+        height:60px;
+    }
+}
 
 @media (max-width: 992px) {
     .hero_area {
@@ -20,6 +45,31 @@
     }
     .icon-boot {
         display: none;
+    }
+
+    .why_section img{
+        height: 140px !important;
+    }
+
+    .why_section .hover_hiding h3 {
+        font-size: 18px !important;
+    }
+
+    .why_section .hover_hiding h2 {
+        font-size:24px !important
+    }
+
+    .why_section .hover_hiding p{
+        font-size:12px !important
+    }
+
+    .side-bar-icon {
+        width: 900px;
+        height: 90px;
+    }
+
+    .side-bar-icon img{
+        height:50px;
     }
 }
 
@@ -48,6 +98,23 @@
     .form-inline {
         display: none;
     }
+
+    .why_section img{
+        height: 120px !important;
+    }
+
+    .why_section .hover_hiding h3 {
+        font-size: 20px !important;
+    }
+
+    .why_section .hover_hiding h2 {
+        font-size:26px !important
+    }
+
+    .why_section .hover_hiding p{
+        font-size:14px !important
+    }
+
 }
 
 .contact_section button {
@@ -113,6 +180,22 @@
     .icon-boot,
     .form-inline {
         display: none;
+    }
+
+    .why_section img{
+        height: 100px !important;
+    }
+
+    .why_section .hover_hiding h3 {
+        font-size: 24px !important;
+    }
+
+    .why_section .hover_hiding h2 {
+        font-size:28px !important
+    }
+
+    .why_section .hover_hiding p{
+        font-size:14px !important
     }
 }
 
