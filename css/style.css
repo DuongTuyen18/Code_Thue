@@ -11,6 +11,15 @@ body {
     overflow-x: hidden;
 }
 
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffff;
+    z-index: 100;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
 .layout_padding {
     padding: 75px 0;
 }
@@ -448,6 +457,10 @@ a:focus {
     height: 541px;
 }
 
+.hover_hiding{
+    color: transparent;
+}
+
 .why_section img {
     height: 100%;
 }
@@ -483,19 +496,18 @@ a:focus {
 .rectangle-galley-content h3 {
     position: absolute;
     bottom: 55.86%;
-    font-family: TeX Gyre Adventor;
     font-style: normal;
     font-weight: bold;
     font-size: 32px;
     line-height: 49px;
-    text-transform: capitalize;
-    color: #000000;
+    color: #484848;
     background-color: #FFFFFF;
 }
 
 .rectangle-galley-content p {
     position: absolute;
     top: 39.84%;
+    width: 470px;
     font-family: TeX Gyre Adventor;
     font-style: normal;
     font-weight: normal;
@@ -607,6 +619,10 @@ a:focus {
 .image-menu-item {
     position: relative;
     width: 320px;
+}
+
+.menu-item {
+    margin: 0px 24px;
 }
 
 .cost-item {

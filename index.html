@@ -39,7 +39,7 @@
         <header class="header_section">
             <div class="container-fluid" style="height: 20px;"></div>
 
-            <div class="container-fluid">
+            <div class="container-fluid" id="heading">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.html">
                         <span>
@@ -59,7 +59,7 @@
                                 <li class="nav-item">
                                     <div class="shop-menu-item">
                                         <a class="nav-link font-nav-link" href="MenuCafe.html"> Shop</a>
-                                        <div class="side-menu-item">
+                                        <div class="side-menu-item" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
                                             <div class="menu-shop">
                                                 <div class="container-fluid">
                                                     <div class="row">
@@ -537,6 +537,24 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="menu-item">
+                            <div class="image-menu-item">
+                                <div class="image">
+                                    <a href=""><img src="./images/menu/Amerino (1).png" alt=""></a>
+                                </div>
+                                <div class="cost-item d-flex justify-content-between">
+                                    <div class="cost">
+                                        Amerino
+                                    </div>
+                                    <div class="">
+                                        $24
+                                    </div>
+                                </div>
+                                <div class="detail-item">
+                                    Ice, chocolate, Raspberries
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -545,17 +563,17 @@
     <!-- end about section -->
 
     <!-- new section -->
-    <section class="why_section layout_padding ">
+    <section class="why_section layout_padding hover_showing">
         <div class="container ">
             <div class="row ">
-                <div class="col-12 ">
+                <div class="col-12 hover_hiding">
                     <h2>
                         Why Choose Us
                     </h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 col-xl-4" style="text-align:right;">
+                <div class="col-md-12 col-xl-4 hover_hiding" style="text-align:right;">
                     <div class="row">
                         <div class="col-xl-12">
                             <h3>
@@ -567,7 +585,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 hover_hiding">
                             <h3>
                                 ONLINE PAYMENT
                             </h3>
@@ -584,7 +602,7 @@
                 </div>
                 <div class="col-md-12 col-xl-4" style="text-align:left;">
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 hover_hiding">
                             <h3>
                                 FREE DELIVERY
                             </h3>
@@ -594,7 +612,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-xl-12">
+                        <div class="col-xl-12 hover_hiding">
                             <h3>
                                 QUALITY PRODUCTS
                             </h3>
@@ -926,32 +944,71 @@
     btnLogin.onclick = function() {
         navbarLogSide.classList.toggle("active");
     }
+
+    var hover_showing = document.querySelector(".hover_showing");
+    var hover_hiding = document.querySelectorAll(".hover_hiding");
+    hover_showing.onmouseover = function() {
+        for(var i = 0; i < hover_hiding.length; i++) {
+            hover_hiding[i].style.color = "#ffffff";
+        }
+    }
+    hover_showing.onmouseleave = function(){
+        for(var i = 0; i < hover_hiding.length; i++) {
+            hover_hiding[i].style.color = "transparent";
+            hover_hiding[i].style.transition = "all 0.5s";
+        }
+    }
+
+
+    window.onscroll = function(){
+        sticky_Header();
+    }
+
+    var header = document.querySelector("#heading");
+    var sticky = header.offsetTop;
+
+    function sticky_Header() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
 </script>
 <script>
+    // $('.slider-menu').slick({
+    //     infinite: false,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 3,
+        
+    //     responsive: [{
+    //         breakpoint: 1430,
+    //         settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2,
+    //         }
+    //     }, {
+    //         breakpoint: 800,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //         }
+    //     }, {
+    //         breakpoint: 480,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //         }
+    //     },]
+    // });
     $('.slider-menu').slick({
-        infinite: false,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [{
-            breakpoint: 1430,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            }
-        }, {
-            breakpoint: 800,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }, {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }]
-    });
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+});
 </script>
 
 </html>
