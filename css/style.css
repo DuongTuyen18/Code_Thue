@@ -531,7 +531,7 @@ a:focus {
     /* height: 700px; */
     position: relative;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 .image-offer {
@@ -542,6 +542,7 @@ a:focus {
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 }
 
 .image-offer img {
