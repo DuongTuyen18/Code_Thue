@@ -42,21 +42,23 @@
 }
 .Payment-method{
     border-bottom: 1px solid #3D5A98;
-    font-size: 30px;
+    font-size: 27px;
     padding-top: 15px;
     padding-right: 10px;
     font-weight: 600;
     padding-left: 60px;
     padding-bottom: 15px;
+    color:#484848;
 }
 .Payment-method-bottom{
-    font-size: 30px;
+    font-size: 27px;
     padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
     font-weight: 600;
     padding-bottom: 15px;
     padding-left: 60px;
+    color:#484848;
 }
 .Payment{
     border: 1px solid #fff;
