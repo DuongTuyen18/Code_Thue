@@ -376,7 +376,7 @@
                         <div class="col-md-12 col-xl-4 col-lg-6"></div>
                         <div class="col-md-12 col-xl-4">
                             <h1 class="offer-content-title text_center" style=" font-style: normal;
-                            font-weight: bold;padding-bottom:10%;">
+                            font-weight: bold;padding-bottom:25%;">
                                 WHAT WE OFFER
                             </h1>
                         </div>
@@ -960,18 +960,31 @@
         navbarLogSide.classList.toggle("active");
     }
 
+    var small__text = document.querySelectorAll(".hover_hiding p");
     var hover_showing = document.querySelector(".hover_showing");
     var hover_hiding = document.querySelectorAll(".hover_hiding");
     hover_showing.onmouseover = function() {
         for(var i = 0; i < hover_hiding.length; i++) {
             hover_hiding[i].style.color = "#ffffff";
         }
+ 
+        for(var i = 0; i < small__text.length; i++) {
+            small__text[i].style.color = "#686868";
+        }
     }
+
+
+
     hover_showing.onmouseleave = function(){
         for(var i = 0; i < hover_hiding.length; i++) {
-            hover_hiding[i].style.color = "transparent";
+            hover_hiding[i].style.color = "transparent";          
             hover_hiding[i].style.transition = "all 0.5s";
         }
+        for(var i = 0; i < small__text.length; i++) {
+            small__text[i].style.color = "transparent";
+            small__text[i].style.transition = "all 0.5s";
+        }
+
     }
 
 
